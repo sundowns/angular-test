@@ -1,0 +1,71 @@
+$colour-purple-soft: #EDE7F6;
+$colour-red-soft: #ffcccc;
+
+.form-container {
+   .reverser-form {
+      width: 100%;
+      display: inline-block;
+
+      .text-field {
+         width: 60%;
+         padding-right: 2.5em;
+      }
+   }
+
+   .result-container {
+      margin-top: 1em;
+      text-align: center;
+
+      .result {
+         padding: 0.5em 0;
+         font-size: 300%;
+
+         margin: 0;
+      }
+   }
+
+   .error {
+      padding: 0.5em;
+      margin: 0.5em auto;
+      max-width: 40%;
+      background-color: $colour-red-soft;
+      border-radius: 2px 2px;
+
+      font-weight: bold;
+   }
+
+   mat-spinner {
+      margin: 1em auto;
+   }
+
+   .listing-container {
+      ul {
+         padding: 0;
+         margin: 1.5em 3em;
+         border: 1px solid $colour-purple-soft;
+         border-radius: 2px 2px;
+
+         text-align: left;
+         list-style: none;
+
+         li {
+            font-weight: bold;
+            padding: 0.4em 0.5em;
+            display: flex;
+            justify-content: space-between;
+
+            aside {
+               padding: 0 1em;
+            }
+
+            &:nth-child(odd) {
+               background-color: white;
+            }
+
+            &:nth-child(even) {
+               background-color: $colour-purple-soft;
+            }
+         }
+      }
+   }
+}

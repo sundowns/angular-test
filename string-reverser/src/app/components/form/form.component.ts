@@ -10,10 +10,21 @@ export class FormComponent implements OnInit {
    private text: string = '';
    private result: string = undefined;
    private error = { show: false, message: ''}
+   private listing: ReversedString[] = [];
+   private loading = { listing: true, submit: false };
 
    constructor(private _apiService: ApiService) { }
 
-   ngOnInit() { }
+   ngOnInit() {
+      this._apiService.loadAll();
+
+      this._apiService.$items.subscribe((items) => {
+         this.listing = items;
+         setTimeout(() => {
+            this.loading.listing = false;
+         }, 1000);
+      })
+   }
 
    onSubmit(event) {
       event.preventDefault();
@@ -29,7 +40,18 @@ export class FormComponent implements OnInit {
          return;
       }
 
-      this.result = this._apiService.reverseString(this.text);
+      this.result = '';
+      this.loading.submit = true;
+
+      // this.result = this._apiService.reverseString(this.text);
+      this._apiService.persistString(this.text).subscribe((data) => {
+         if (data && data.reversed) {
+            this.result = data.reversed;
+            this.text = '';
+            this.listing.push(data);
+            this.loading.submit = false;
+         }
+      });
    }
 
    private showError(message: string) {

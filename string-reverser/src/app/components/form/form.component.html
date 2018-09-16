@@ -1,0 +1,32 @@
+<mat-card class="form-container">
+   <form class="reverser-form">
+      <mat-form-field class="text-field">
+         <input matInput placeholder="Type some text" name="text" [(ngModel)]="text">
+      </mat-form-field>
+      <button mat-raised-button (click)="onSubmit($event)" color="primary">Submit</button>
+   </form>
+
+   <div *ngIf="error.show" class="error">{{error.message}}</div>
+
+   <div *ngIf="result" class="result-container">
+      <mat-divider></mat-divider>
+      <p class="result">{{result}}</p>
+   </div>
+
+   <mat-spinner
+      *ngIf="loading.listing || loading.submit"
+      [diameter]="80">
+   </mat-spinner>
+   <div *ngIf="!loading.listing && listing.length > 0" class="listing-container">
+      <mat-divider></mat-divider>
+      <br/>
+      <h3>Previous Submissions</h3>
+      <ul>
+         <li *ngFor="let item of listing">
+            <span >{{item.value}}</span>
+            <aside>&#8594;</aside>
+            <span>{{item.reversed}}</span>
+         </li>
+      </ul>
+   </div>
+</mat-card>

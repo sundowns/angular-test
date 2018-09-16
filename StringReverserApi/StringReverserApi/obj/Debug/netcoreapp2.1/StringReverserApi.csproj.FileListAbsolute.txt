@@ -1,0 +1,13 @@
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\bin\Debug\netcoreapp2.1\StringReverserApi.deps.json
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\bin\Debug\netcoreapp2.1\StringReverserApi.runtimeconfig.json
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\bin\Debug\netcoreapp2.1\StringReverserApi.runtimeconfig.dev.json
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\bin\Debug\netcoreapp2.1\StringReverserApi.dll
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\bin\Debug\netcoreapp2.1\StringReverserApi.pdb
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.csproj.CoreCompileInputs.cache
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.RazorAssemblyInfo.cache
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.RazorAssemblyInfo.cs
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.AssemblyInfoInputs.cache
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.AssemblyInfo.cs
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.RazorTargetAssemblyInfo.cache
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.dll
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.pdb
