@@ -4,6 +4,10 @@
 /tmp
 /out-tsc
 StringReverserApi/StringReverserApi/obj
+StringReverserApi/StringReverserApi/bin
+
+#data
+StringReverserApi/StringReverserApi/records.db
 
 # dependencies
 */node_modules
@@ -25,7 +29,7 @@ StringReverserApi/StringReverserApi/obj
 !.vscode/extensions.json
 .vs/
 */.vs/
-*/bin/
+bin/
 
 # misc
 /.sass-cache

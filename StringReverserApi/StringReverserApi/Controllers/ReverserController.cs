@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using StringReverserApi.Models;
+using StringReverserApi.Services;
+using StringReverserApi.ViewModels;
 
 namespace StringReverserApi.Controllers
 {
@@ -8,11 +9,13 @@ namespace StringReverserApi.Controllers
     [ApiController]
     public class ReverserController : ControllerBase
     {
+        PersistenceService _persistence = new PersistenceService();
+
         // GET all values
         [HttpGet]
-        public ActionResult<IEnumerable<ReversedString>> Get()
+        public IEnumerable<ReversedString> Get()
         {
-            return new ReversedString[] { new ReversedString("test1"), new ReversedString("test2"), new ReversedString("Another one")};
+            return _persistence.GetAllRecords();
         }
 
         // POST api/reverser - Store and return a reversed string
@@ -21,7 +24,7 @@ namespace StringReverserApi.Controllers
         {
             if (!string.IsNullOrWhiteSpace(value))
             {
-                return new ReversedString(value);
+                return _persistence.ProcessAndPersistRecord(value);
             }
             return BadRequest();
         }
