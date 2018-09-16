@@ -23,7 +23,7 @@ export class ApiService {
    }
 
    public persistString(value: string) : Observable<ReversedString> {
-      return this.http.post<string>(this.endpoint, `"${value}"`,
+      return this.http.post<ReversedString>(this.endpoint, `"${value}"`,
       {
          headers: new HttpHeaders({
             'Content-Type':  'application/json'
