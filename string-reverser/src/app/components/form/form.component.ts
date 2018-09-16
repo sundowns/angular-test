@@ -19,10 +19,12 @@ export class FormComponent implements OnInit {
       this._apiService.loadAll();
 
       this._apiService.$items.subscribe((items) => {
-         this.listing = items;
-         setTimeout(() => {
-            this.loading.listing = false;
-         }, 1000);
+         if (items) {
+            this.listing = items;
+            setTimeout(() => {
+               this.loading.listing = false;
+            }, 1000);
+         }
       })
    }
 

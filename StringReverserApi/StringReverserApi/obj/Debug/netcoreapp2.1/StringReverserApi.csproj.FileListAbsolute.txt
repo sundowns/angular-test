@@ -11,3 +11,4 @@ D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug
 D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.RazorTargetAssemblyInfo.cache
 D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.dll
 D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.pdb
+D:\Dev\tech-test\people-diagnostix\StringReverserApi\StringReverserApi\obj\Debug\netcoreapp2.1\StringReverserApi.csprojAssemblyReference.cache
