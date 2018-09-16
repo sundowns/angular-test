@@ -3,6 +3,7 @@
 /dist
 /tmp
 /out-tsc
+StringReverserApi/StringReverserApi/obj
 
 # dependencies
 */node_modules
@@ -24,7 +25,6 @@
 !.vscode/extensions.json
 .vs/
 */.vs/
-*/obj/
 */bin/
 
 # misc

@@ -21,11 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/reverser",
-<<<<<<< HEAD
-      "applicationUrl": "https://localhost:44320;http://localhost:44320",
-=======
       "applicationUrl": "https://localhost:44320;http://localhost:5000",
->>>>>>> First run on linux
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
